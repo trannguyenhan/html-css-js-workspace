@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+</head>
+<body>
+	<form action="Exercise.php" method="POST" id="submit_info">
+		<table border="1" align="center">
+			<tr>
+				<td>Your name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>Class</td>
+				<td><input type="text" name="class"></td>
+			</tr>
+			<tr>
+				<td>University</td>
+				<td><input type="text" name="university"></td>
+			</tr>
+			<tr>
+				<td>Hobby</td>
+				<td>	
+					<table align="center" border="1">
+						<tr>
+							<td></td>
+							<td>Yes</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Cat</td>
+							<td><input type="radio" name="cat" value="Yes"></td>
+							<td><input type="radio" name="cat" value="No"></td>
+						</tr>
+						<tr>
+							<td>Cooking</td>
+							<td><input type="radio" name="cooking" value="Yes"></td>
+							<td><input type="radio" name="cooking" value="No"></td>
+						</tr>
+						<tr>
+							<td>Dog</td>
+							<td><input type="radio" name="dog" value="Yes"></td>
+							<td><input type="radio" name="dog" value="No"></td>
+						</tr>
+						<tr>
+							<td>Math</td>
+							<td><input type="radio" name="math" value="Yes"></td>
+							<td><input type="radio" name="math" value="No"></td>
+						</tr>
+						<tr>
+							<td>Web</td>
+							<td><input type="radio" name="web" value="Yes"></td>
+							<td><input type="radio" name="web" value="No"></td>
+						</tr>
+						<tr>
+							<td>Facebook</td>
+							<td><input type="radio" name="facebook" value="Yes"></td>
+							<td><input type="radio" name="facebook" value="No"></td>
+						</tr>
+						<tr>
+							<td>Youtube</td>
+							<td><input type="radio" name="youtube" value="Yes"></td>
+							<td><input type="radio" name="youtube" value="No"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Click to Submit" form="submit_info"></td>
+			</tr>
+			<tr>
+				<td><input type="reset" value="Erase and Restart" form="submit_info"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
