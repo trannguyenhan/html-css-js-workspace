@@ -87,6 +87,8 @@
 			print "Hi, $name ! <br />";
 			print "You have choose to have an appointment on $time_hour:$time_minus:$time_second, $date_day/$date_month/$date_year <br />";
 			print "More information <br />";
+
+			
 			
 		}
 	 ?>
