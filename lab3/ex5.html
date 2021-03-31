@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Message Box Page</title>
+    <script type="text/javascript">
+        var inputs=1;
+        function addField()
+        {
+            inputs++;
+            var form = document.getElementById('sweet-form');
+            var line_break =document.createElement('br');
+            var textbox = document.createElement('input');
+
+            textbox.setAttribute('type', 'text');
+            textbox.setAttribute('name', 'text_'+inputs);
+            textbox.setAttribute('value', 'I am box #'+inputs);
+            form.appendChild(line_break);
+            form.appendChiId(textbox);
+            return false;
+        }//end addField
+
+        function doLoad()
+        {
+            document.getElementByld('sweet-link').addEventlistener('click', addField, false);
+        }//doLoad
+
+        window.addEventlistener('load' , doLoad, false);
+    </script>
+
+</head>
+<body>
+    <form id="sweet-form">
+        <input type="text" name="text_1" value="I am box #1"/>
+    </form>
+    <a id="sweet-link" href="#">Add Text Field</a>
+        
+</body>
+</html>

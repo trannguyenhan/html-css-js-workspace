@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" onsubmit="return checkEmail();">
+        username: <input type="text" name="username" id="user">
+        email: <input type="text" name="email" id="email">
+        phone: <input type="text" name="phone" id="phone">
+        <input type="submit" name="submit" value="submit">
+    </form>
+</body>
+
+</script>
+<script type="text/javascript"> 
+    function checkEmail() { 
+        var email = document.getElementById('email').value; 
+        var username = document.getElementById("user").value;
+        var phone = document.getElementById("phone").value;
+        var filterEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var filterPhone = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+        var text="";
+        if(!username){
+            text+="username không được trống\n";
+        }
+
+        if (!filterEmail.test(email)){
+            text+="email sai định dạng\n";   
+        }
+
+        if(!filterPhone.test(phone)){
+            text+="phone sai định dạng";
+        }
+
+        if(text==""){
+            alert("bạn đã nhập thông tin thành công");
+            return true;
+        }else{
+            alert(text);
+            return false;
+        }
+    } 
+    </script>
+</html>
