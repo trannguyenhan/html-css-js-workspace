@@ -32,7 +32,7 @@
 				
 					<select name="date_year">
 						<?php 
-							for($i=1995; $i<2009; $i++){
+							for($i=1985; $i<2009; $i++){
 								print "<option> $i </option>";
 							}
 						 ?>
@@ -86,10 +86,26 @@
 
 			print "Hi, $name ! <br />";
 			print "You have choose to have an appointment on $time_hour:$time_minus:$time_second, $date_day/$date_month/$date_year <br />";
-			print "More information <br />";
+			print "More information <br /> In 12 hours, the time and date is ";
 
-			
-			
+			$date=date_create("$date_year-$date_month-$date_day $time_hour:$time_minus:$time_second");
+			echo date_format($date,"Y-m-d h:i:sa");
+			echo "<br />";
+
+			if($date_month == 1 || $date_month == 3 || $date_month == 5 || $date_month == 7 || $date_month == 8 || $date_month == 10 || $date_month == 12){
+				echo "This month has 31 days";
+			} elseif ($date_month != 2){
+				echo "This month has 30 days";
+			} else {
+				if($date_year % 100 == 0 && $date_year % 400 == 0){
+					echo "This month has 29 days";
+				} elseif ($date_year % 4 == 0) {
+					echo "This month has 29 days";
+				} else {
+					echo "This month has 28 days";
+				}
+			}
+
 		}
 	 ?>
 </body>
