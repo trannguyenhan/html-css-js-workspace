@@ -1,5 +1,5 @@
 ## Assignments for web technologies and e-services subjects
-### Group : one
+### Group : MTHH
 - Member 1 : Nguyen Quang Huy
 - Member 2 : Bui Viet Hoang
 - Member 3 : Nguyen Van Thanh
