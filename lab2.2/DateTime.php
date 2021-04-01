@@ -32,7 +32,7 @@
 				
 					<select name="date_year">
 						<?php 
-							for($i=1985; $i<2009; $i++){
+							for($i=1900; $i<2009; $i++){
 								print "<option> $i </option>";
 							}
 						 ?>
@@ -99,7 +99,7 @@
 			} else {
 				if($date_year % 100 == 0 && $date_year % 400 == 0){
 					echo "This month has 29 days";
-				} elseif ($date_year % 4 == 0) {
+				} elseif ($date_year % 4 == 0 && $date_year % 10 != 0) {
 					echo "This month has 29 days";
 				} else {
 					echo "This month has 28 days";
