@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <title>Example Message Box Page</title>
     <script type="text/javascript">
-        var inputs=1;
+        var inputs = 1;
+
         function addField()
         {
             inputs++;
-            var form = document.getElementById('sweet-form');
-            var line_break =document.createElement('br');
-            var textbox = document.createElement('input');
 
-            textbox.setAttribute('type', 'text');
-            textbox.setAttribute('name', 'text_'+inputs);
-            textbox.setAttribute('value', 'I am box #'+inputs);
+            var form = document.getElementById("sweet-form");
+            var line_break =document.createElement("br");
+            var textbox = document.createElement("input");
+
+            textbox.setAttribute("type", "text");
+            textbox.setAttribute("name", "text_" + inputs);
+            textbox.setAttribute("value", "I am box #" + inputs);
             form.appendChild(line_break);
-            form.appendChiId(textbox);
+            form.appendChild(textbox);
+            
             return false;
-        }//end addField
+        } //end addField
 
         function doLoad()
         {
-            document.getElementByld('sweet-link').addEventlistener('click', addField, false);
+            document.getElementById("sweet-link").addEventListener("click", addField, false);
         }//doLoad
 
-        window.addEventlistener('load' , doLoad, false);
+        window.addEventListener("load" , doLoad, false);
     </script>
 
 </head>
@@ -33,7 +36,7 @@
     <form id="sweet-form">
         <input type="text" name="text_1" value="I am box #1"/>
     </form>
-    <a id="sweet-link" href="#">Add Text Field</a>
-        
+    <a id="sweet-link" href="#" >Add Text Field</a>
 </body>
 </html>
+
