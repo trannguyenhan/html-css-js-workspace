@@ -13,9 +13,9 @@ function getCookie(name) {
 }
 
 function addCookie () {
-	var data = document.myform.customer.value;
-	document.writeln(document.cookie);
-	if(data === ""){
+	var data = document.myform.textarea.value;
+
+	if(data == ""){
 		return false;
 	} else {
 		var oldCookie = getCookie("cookie");
@@ -25,8 +25,9 @@ function addCookie () {
 		} else {
 			cookievalue = encodeURIComponent(data);
 		}
-		document.cookie="cookie=" + cookievalue + "; max-age=86400;";
-       	document.writeln(decodeURIComponent(document.cookie));
+		var maxAge = "; max-age=" + 1*24*60*60 + ";";
+		document.cookie="cookie=" + cookievalue + maxAge;
+       	document.myform.textarea.value = "";
 	}
 }
 
@@ -37,7 +38,7 @@ function loadCookie () {
 	let i = 0;
 	while(true){
 		for (i=start; i<stop; i++){
-			if(allCookie[i] === " ") break;
+			if(allCookie[i] == " ") break;
 		}
 
 		var tmpCookie = allCookie.substring(start, i);
