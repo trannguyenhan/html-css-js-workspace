@@ -4,7 +4,7 @@
 
 define ('DEVELOPMENT_ENVIRONMENT',true);
 
-define('DB_NAME', 'yourdatabasename');
-define('DB_USER', 'yourusername');
-define('DB_PASSWORD', 'yourpassword');
+define('DB_NAME', 'todo');
+define('DB_USER', 'root');
+define('DB_PASSWORD', 'mysql1234');
 define('DB_HOST', 'localhost');
