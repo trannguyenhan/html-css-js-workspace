@@ -1,0 +1,27 @@
+<html>
+<head><title>Insert Inventory</title></head>
+<body>
+	<form action="insert_table.php" method="post">
+		<table>
+			<tr>
+				<td>Item Description:</td>
+				<td><input type="text" maxlength="50" name="product_desc"></td>
+			</tr>
+			<tr>
+				<td>Weight:</td>
+				<td><input type="number" min="0" max="100" name="weight"></td>
+			</tr>
+			<tr>
+				<td>Cost:</td>
+				<td><input type="number" min="0" max="100" name="cost"></td>
+			</tr>
+			<tr>
+				<td>Number Available:</td>
+				<td><input type="number" min="0" max="1000" name="number"></td>
+			</tr>
+		</table>
+		<input type="submit" value="Click To Submit">
+		<input type="reset" value="Reset">
+	</form>
+</body>
+</html>
