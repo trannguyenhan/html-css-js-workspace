@@ -127,13 +127,26 @@ Click on one or control click on multiple catetories <br /><br />
 
 		$query = "insert into info(name_biz, adress_biz, city_biz, telephone_biz, url_biz)
 					value (
-					$name, $adress, $city, $telephone, $url	
+					'$name', '$adress' , '$city', '$telephone', '$url'	
 				)";
 		mysqli_query($db, $query);
+		// echo $query;
+		// if($result){
+		// 	echo "successfully";
+		// } else {
+		// 	echo "fail!";
+		// }
 
 		$query = "select id from info where name_biz = '$name' and adress_biz = '$adress'";
 		
 		$result = mysqli_query($db, $query);
+		// echo $query;
+		// if($result){
+		// 	echo "successfully";
+		// } else {
+		// 	echo "fail!";
+		// }
+
 		$row = mysqli_fetch_array($result);
 		$id = $row["id"];
 
