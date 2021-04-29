@@ -1,6 +1,6 @@
-## Assignments for web technologies and e-services subjects
-### Group : MTHH
-- Member 1 : Nguyen Quang Huy
-- Member 2 : Bui Viet Hoang
-- Member 3 : Nguyen Van Thanh
-- Member 4 : Tran Quang Minh
+## Bài tập môn công nghệ web và dịch vụ trực tuyến
+### Nhóm : MTHH
+- Thành viên 1 : Nguyen Quang Huy
+- Thành viên 2 : Bui Viet Hoang
+- Thành viên 3 : Nguyen Van Thanh
+- Thành viên 4 : Tran Quang Minh
