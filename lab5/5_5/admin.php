@@ -4,8 +4,8 @@
 <form action="addcategory.php" method="post">
 <?php
 $server = 'localhost';
-$user = 'minhtq';
-$pass = 'minhtq';
+$user = 'root';
+$pass = 'mysql1234';
 $mydb = 'business_service';
 $table_name = 'categories';
 $connect = mysqli_connect($server, $user, $pass, $mydb);
