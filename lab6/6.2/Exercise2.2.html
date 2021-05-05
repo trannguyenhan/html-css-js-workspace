@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            
+            background-color: red;
+        }
+        #content{
+            float: left;width: 80%; background-color: aliceblue;
+
+        }
+        #sidebar{
+            float: right;width: 20%; background-color:rgb(198, 218, 25);
+        }
+        #footer{
+            background-color: blue; color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        Header content
+    </div>
+    <div id="content">
+        Main content
+    </div>
+    <div id="sidebar">Sidebar contentSidebar contentSidebar contentSidebar content</div>
+    <div id="footer">Footer content</div>
+
+    <script>
+
+        window.onload = function()
+        {
+            setHeight();
+        };
+         
+        function setHeight()
+        {
+            var right = document.getElementById('sidebar');
+            var content = document.getElementById('content');
+        
+            var maxHeight=right.offsetHeight;
+
+            if(content.offsetHeight>maxHeight){
+                maxHeight=content.offsetHeight;
+            }
+            right.style.height=maxHeight+'px';
+            content.style.height=maxHeight+'px';
+        };
+        
+        </script>
+</body>
+</html>

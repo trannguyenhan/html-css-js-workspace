@@ -1,0 +1,28 @@
+span {
+    float: left;
+    font-family: "Cushing Book";
+    font-size: 75pt;
+}
+
+p {
+    margin-top: 5px;
+}
+
+p.rhead{
+    text-align: right;
+    margin-right: 0.5in;
+    font-family: sans-serif;
+}
+
+p.lhead{
+    font-family: sans-serif;
+}
+
+p.body {
+    text-align: justify;
+    text-indent: 0.5in;
+}
+p.foot{
+    margin-left: 60%;
+    line-height: 300%;
+}
