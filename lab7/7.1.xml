@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8">
+<students>
+    <student>
+        <mssv>20183632</mssv>
+        <name>Nguyễn Văn Thanh</name>
+        <class>khmt04-k63</class>
+        <address>Hà Nội</address>
+        <phone>0967648120</phone>
+    </student>
+
+    <mssv>20183554</mssv>
+        <name>Nguyễn Quang Huy</name>
+        <class>khmt03-k63</class>
+        <address>Hà Nội</address>
+        <phone>0999999999</phone>
+    </student>
+</students>
